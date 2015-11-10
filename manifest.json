@@ -7,6 +7,9 @@
     "storage",
     "*://*.tribalwars.com.br/*"
   ],
+  "icons": {
+    "128": "img/icon128.png"
+  },
   "background": {
     "scripts": ["js/events.js"],
     "persistent": false
