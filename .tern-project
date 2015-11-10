@@ -1,0 +1,15 @@
+{
+  "ecmaVersion": 5,
+  "libs": [
+    "browser",
+    "jquery"
+  ],
+  "loadEagerly": [
+    "js/*.js",
+    "js/*/*.js",
+    "lib/*.js"
+  ],
+  "dontLoad": [
+    "lib/jquery-1.11.3.js"
+  ]
+}

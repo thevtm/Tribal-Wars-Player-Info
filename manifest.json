@@ -1,0 +1,53 @@
+{
+  "name": "Tribal Wars Player Info",
+  "version": "1.0",
+  "description": "An extension for Google Chrome that add extra information about the players of Tribal Wars.",
+  "permissions": [
+    "declarativeContent",
+    "storage",
+    "*://*.tribalwars.com.br/*"
+  ],
+  "background": {
+    "scripts": ["js/events.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "templates/player-tooltip.jst"
+  ],
+  "page_action": {
+    "matches": [
+      "*://*.tribalwars.com.br/*"
+    ],
+    "default_icon": "img/favicon19.png",
+    "default_title" : "batata"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.tribalwars.com.br/*"
+      ],
+      "css": [
+        "css/TWPI.css"
+      ],
+      "js": [
+        "lib/jquery-1.11.3.js",
+        "lib/lodash.js",
+        "lib/Multimap.js",
+        "js/lib-config.js",
+        "js/const.js",
+        "js/util.js",
+        "js/data/tribe.js",
+        "js/data/village.js",
+        "js/data/player.js",
+        "js/scrapers/player-profile.js",
+        "js/scrapers/user-player.js",
+        "js/global.js",
+        "js/storage.js",
+        "js/ui/player-profile-link-ui.js",
+        "js/engines/player-info-engine.js",
+        "js/index.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}

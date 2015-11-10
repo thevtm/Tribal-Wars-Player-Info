@@ -1,0 +1,25 @@
+
+.TWPI-Player-Link {
+
+}
+
+.TWPI-Player-Tooltip {
+  display: none;
+  position: fixed;
+  background: #c1a264;
+  color: #603000;
+  width: 200px;
+  z-index: 1000;
+  padding: 2px;
+  border: 3px solid;
+  border-color: #7d510f;
+  overflow:hidden;
+}
+
+.TWPI-Player-Tooltip table {
+  width: 100%;
+}
+
+.TWPI-Player-Link:hover .TWPI-Player-Tooltip {
+  display: block;
+}

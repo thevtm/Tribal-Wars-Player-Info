@@ -1,0 +1,3 @@
+
+/*** Multimap ***/
+Multimap.Map = Map;

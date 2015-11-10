@@ -1,0 +1,23 @@
+<div class="TWPI-Player-Tooltip">
+  <table>
+    <tbody>
+      <tr>
+        <td><b>Rank: </b></td>
+        <td style="text-align: right; width: 100%;"><%= rank %>º</td>
+      </tr>
+
+      <% if (tribe) { %>
+        <tr>
+          <td><b>Tribe: </b></td>
+          <td style="text-align: right; width: 100%;"><%= tribe.name %></td>
+        </tr>
+      <% } %>
+
+      <tr>
+        <td><b>Villages: </b></td>
+        <td style="text-align: right; width: 100%;"><%= villages.length %></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
